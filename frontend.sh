@@ -5,6 +5,6 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 ## Some files need to be created
-
+cp roboshop.conf /etc/nginx/default.d/roboshop.conf
 systemctl restart nginx
 systemctl enable nginx
