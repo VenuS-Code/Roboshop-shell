@@ -15,10 +15,10 @@ unzip /tmp/catalogue.zip
 cd /app
 echo -e "\e[32m >>>>>>>>> Installing Node Package Manager<<<<<<<<<\e[0m"
 npm install
-cp /home/centos/Roboshop/catalogue.service /etc/systemd/system/catalogue.service
+cp /home/centos/Roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
-cp /home/centos/Roboshop/mongo.repo /etc/yum.repos.s/mongo.repo
+cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.s/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
