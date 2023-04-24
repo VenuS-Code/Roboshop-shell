@@ -11,3 +11,4 @@ echo -e "\e[36m >>>>>>> Enable redis startup service  <<<<<\e[0m"
 systemctl enable redis
 echo -e "\e[36m >>>>>>> starting redis services <<<<<\e[0m"
 systemctl start redis
+
