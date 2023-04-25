@@ -14,7 +14,7 @@ mvn clean package
 echo -e "\e[36m >>>>> moving the code to respective directory \e[0m"
 mv target/shipping-1.0.jar shipping.jar
 echo -e "\e[36m >>>>> copying shipping service to systemd \e[0m"
-cp /home/centos/roboshop-shell/shipping.service /etc/systemd/system/shipping.service
+cp /home/centos/Roboshop-shell/shipping.service /etc/systemd/system/shipping.service
 systemctl daemon-reload
 echo -e "\e[36m >>>>> enable and start shipping service \e[0m"
 systemctl enable shipping
