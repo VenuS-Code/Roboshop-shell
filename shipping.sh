@@ -3,7 +3,6 @@ yum install maven -y
 echo -e "\e[36m >>>>> Adding user roboshop \e[0m"
 useradd roboshop
 echo -e "\e[36m >>>>> Creating a directory \e[0m"
-rm -rf /app
 mkdir /app
 echo -e "\e[36m >>>>> Downloading Application code \e[0m"
 curl -L -o /tmp/shipping.zip https://roboshop-artifacts.s3.amazonaws.com/shipping.zip
