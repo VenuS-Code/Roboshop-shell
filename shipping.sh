@@ -21,6 +21,6 @@ systemctl enable shipping
 systemctl start shipping
 echo -e "\e[36m >>>>> Installing mysql \e[0m"
 yum install mysql -y
-mysql -h mysql.devopsbeginner.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
+mysql -h 172.31.15.114 -uroot -pRoboShop@1 < /app/schema/shipping.sql
 systemctl restart shipping
 
