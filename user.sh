@@ -23,3 +23,4 @@ cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 echo -e "\e [35m >>>>> Installing mongodb <<<<<\e [0m"
 yum install mongodb-org-shell -y
 mongo --host mongodb.devopsbeginner.online </app/schema/user.js
+
