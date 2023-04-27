@@ -22,4 +22,4 @@ systemctl enable catalogue
 systemctl start catalogue
 cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host mongodb.devopsbeginner.online </app/schema/catalogue.js
+mongo --host 172.31.80.131 </app/schema/catalogue.js
